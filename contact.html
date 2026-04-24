@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Event Planner</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="fade">
+    <h2>Budget Calculator</h2>
+
+    <input type="number" id="venue" placeholder="Venue Cost"><br>
+    <input type="number" id="catering" placeholder="Catering Cost"><br>
+    <input type="number" id="decor" placeholder="Decoration Cost"><br>
+
+    <button onclick="calculateBudget()">Calculate Budget</button>
+    <h3 id="total"></h3>
+
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+
+    <button onclick="contact()">Send</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

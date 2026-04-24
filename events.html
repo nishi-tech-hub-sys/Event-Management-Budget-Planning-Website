@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Event Planner</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="fade">
+    <h2>Our Events</h2>
+
+    <div class="event">
+        <h3>Wedding</h3>
+        <button onclick="toggleDetails('wedding')">View Event</button>
+        <div id="wedding" class="details">
+            <p>Beautiful wedding arrangements.</p>
+            <button onclick="toggleDetails('wedding')">Hide Details</button>
+        </div>
+    </div>
+
+    <div class="event">
+        <h3>Birthday Party</h3>
+        <button onclick="toggleDetails('birthday')">View Event</button>
+        <div id="birthday" class="details">
+            <p>Fun birthday celebration setup.</p>
+            <button onclick="toggleDetails('birthday')">Hide Details</button>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

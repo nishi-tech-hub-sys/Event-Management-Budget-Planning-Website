@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Event Planner</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+    <h2>Welcome to Event Management</h2>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <img id="slide" src="https://via.placeholder.com/600x300?text=Event+1">
+    </div>
+
+    <button onclick="prevSlide()">Prev</button>
+    <button onclick="nextSlide()">Next</button>
+
+    <br><br>
+    <button>Book Now</button>
+</section>
+
+<!-- Events Section (Fade Added) -->
+<section id="events" class="fade">
+    <h2>Our Events</h2>
+
+    <div class="event">
+        <h3>Wedding</h3>
+        <button onclick="toggleDetails('wedding')">View Event</button>
+        <div id="wedding" class="details">
+            <p>Beautiful wedding arrangements with decoration & catering.</p>
+            <button onclick="toggleDetails('wedding')">Hide Details</button>
+        </div>
+    </div>
+
+    <div class="event">
+        <h3>Birthday Party</h3>
+        <button onclick="toggleDetails('birthday')">View Event</button>
+        <div id="birthday" class="details">
+            <p>Fun birthday themes, cake & entertainment.</p>
+            <button onclick="toggleDetails('birthday')">Hide Details</button>
+        </div>
+    </div>
+</section>
+
+<!-- Budget Section -->
+<section id="budget" class="fade">
+    <h2>Budget Calculator</h2>
+
+    <input type="number" id="venue" placeholder="Venue Cost"><br>
+    <input type="number" id="catering" placeholder="Catering Cost"><br>
+    <input type="number" id="decor" placeholder="Decoration Cost"><br>
+
+    <button onclick="calculateBudget()">Calculate Budget</button>
+
+    <h3 id="total"></h3>
+</section>
+
+<!-- Pricing Section (Fade Added) -->
+<section id="pricing" class="fade">
+    <h2>Pricing Packages</h2>
+
+    <button class="accordion">Basic Package</button>
+    <div class="panel">₹10,000 - Basic services</div>
+
+    <button class="accordion">Standard Package</button>
+    <div class="panel">₹25,000 - Includes catering</div>
+
+    <button class="accordion">Premium Package</button>
+    <div class="panel">₹50,000 - Full service</div>
+</section>
+
+<!-- Contact Section (Fade Added) -->
+<section id="contact" class="fade">
+    <h2>Contact Us</h2>
+
+    <input type="text" placeholder="Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+
+    <button onclick="contact()">Contact</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
